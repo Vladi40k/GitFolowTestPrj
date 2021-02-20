@@ -1,11 +1,8 @@
 #include <iostream>
 #include <algorithm>
 
+void showArgCnt(int);
 
-void showArgCnt(int cnt) 
-{
-	std::cout << "arg cnt: " << cnt << std::endl;
-}
 
 int main(int agrc, char* argv[])
 {
@@ -18,4 +15,10 @@ int main(int agrc, char* argv[])
 	showArgCnt(agrc);
 
 	return 0;
+}
+
+
+void showArgCnt(int cnt)
+{
+	std::cout << "arg cnt: " << cnt << std::endl;
 }
